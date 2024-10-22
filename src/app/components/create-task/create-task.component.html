@@ -1,0 +1,33 @@
+<ion-content>
+
+<div (click)="dismissModal()" >
+<ion-icon name="close"></ion-icon>
+</div>
+
+<form>
+
+
+    <ion-card>
+      <ion-item>
+        <ion-input placeholder="Entre com a Tarefa" type="text"></ion-input>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+
+        <ion-textarea rows="5" placeholder="Entre com a Descrição"></ion-textarea>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-select label="Task Prioridade">
+          <ion-select-option *ngFor="let item of priority" [value]="item" >{{item}}</ion-select-option>
+
+        </ion-select>
+      </ion-item>
+    </ion-card>
+
+</form>
+
+</ion-content>

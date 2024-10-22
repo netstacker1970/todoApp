@@ -1,0 +1,14 @@
+/* Efeito de foco customizado para ion-item */
+ion-item.ion-focused {
+  --highlight-color-focused: #3880ff; /* Cor da borda e do label ao focar */
+  --color-focused: #3880ff;           /* Cor do texto ao focar */
+  --background-focused: #e0f7fa;      /* Cor de fundo ao focar */
+}
+
+/* Estilo para o input quando estiver focado */
+ion-input:focus {
+  border: 1px solid #3880ff;           /* Borda customizada no foco */
+  background-color: #f1f1f1;           /* Cor de fundo no foco */
+  --placeholder-color: #888;           /* Cor do placeholder */
+  outline: none;                       /* Remove o contorno padrão */
+}
